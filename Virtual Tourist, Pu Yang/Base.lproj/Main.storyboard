@@ -37,7 +37,7 @@
                     </navigationItem>
                     <connections>
                         <outlet property="flickrMapView" destination="gJS-oz-a3f" id="a8K-DA-5En"/>
-                        <segue destination="32u-0J-aCE" kind="show" id="IiK-GR-Kx5"/>
+                        <outlet property="mapView" destination="gJS-oz-a3f" id="WnV-Q2-Oqg"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -45,10 +45,10 @@
             </objects>
             <point key="canvasLocation" x="325.60000000000002" y="132.68365817091455"/>
         </scene>
-        <!--View Controller-->
+        <!--Photo Album View Controller-->
         <scene sceneID="3oL-1Z-W5c">
             <objects>
-                <viewController id="32u-0J-aCE" sceneMemberID="viewController">
+                <viewController id="32u-0J-aCE" customClass="PhotoAlbumViewController" customModule="Virtual_Tourist__Pu_Yang" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="FmX-mA-KEq">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -102,6 +102,12 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <viewLayoutGuide key="safeArea" id="T1d-dM-Ece"/>
                     </view>
+                    <connections>
+                        <outlet property="button" destination="bhD-CJ-gpm" id="9jT-Wf-bys"/>
+                        <outlet property="collectionView" destination="37I-29-vvB" id="oyl-j6-MHL"/>
+                        <outlet property="flowLayout" destination="ncs-3A-lbz" id="XC9-bj-UP7"/>
+                        <outlet property="mapView" destination="Bgq-Yd-T5A" id="fSK-Hc-iAK"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="OHr-1F-EmW" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
